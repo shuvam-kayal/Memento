@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjgyaxhkj6h1s"]
+
+[ext_resource type="PackedScene" uid="uid://yo88dubd42ds" path="res://Scenes/Environments/House/House.tscn" id="1_7noh3"]
+[ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_in6ly"]
+
+[node name="Level01" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.998894, 0, -0.04701922, -0.008189045, 0.9847167, 0.17397116, 0.04630061, 0.17416379, -0.9836276, 0, 3.7419543, -8.630421)
+
+[node name="House" parent="." instance=ExtResource("1_7noh3")]
+
+[node name="OldLady" parent="." instance=ExtResource("2_in6ly")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 1.4520614, 0.12923706, -1.7203879)
