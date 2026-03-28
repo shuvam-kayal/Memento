@@ -1,0 +1,11 @@
+Model Information:
+* title:	Duplex
+* source:	https://sketchfab.com/3d-models/duplex-70ab4f4164b54afbad87f174f8b285c1
+* author:	SrMonteiro (https://sketchfab.com/crispimrafael)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Duplex" (https://sketchfab.com/3d-models/duplex-70ab4f4164b54afbad87f174f8b285c1) by SrMonteiro (https://sketchfab.com/crispimrafael) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
