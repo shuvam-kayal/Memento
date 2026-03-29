@@ -18,6 +18,10 @@ config/name="Memento"
 run/main_scene="uid://bjgyaxhkj6h1s"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
+[autoload]
+
+Global="*res://Core/global.gd"
+
 [filesystem]
 
 import/blender/enabled=false
