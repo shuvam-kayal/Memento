@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://btbf7b5uaojqq"]
+[gd_scene format=3 uid="uid://btbf7b5uaojqq"]
 
 [ext_resource type="PackedScene" uid="uid://dt2dlapkgov0a" path="res://Scenes/Environments/garden/garden.tscn" id="1_gwcpk"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_455xj"]

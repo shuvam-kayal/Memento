@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://d0utjv6fx24kt" path="res://Assets/InteriorHouse/scene.gltf" id="2_drnsu"]
 [ext_resource type="PackedScene" uid="uid://bdb4a8stxx5pr" path="res://Assets/Table/scene.gltf" id="2_j0ytx"]
 [ext_resource type="PackedScene" uid="uid://cbxf7s6u6nni4" path="res://Scenes/Props/TeddyBear.tscn" id="4_drnsu"]
-[ext_resource type="PackedScene" uid="uid://bfy4isla4pr36" path="res://Assets/flowerpot/scene.gltf" id="4_j0ytx"]
 [ext_resource type="PackedScene" uid="uid://dui13iym1ppwi" path="res://Assets/doorhandle/scene.gltf" id="6_gf4dq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xou0q"]
@@ -44,7 +43,7 @@ transform = Transform3D(-0.3, 0, -4.5298744e-08, 0, 0.3, 0, 4.5298744e-08, 0, -0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="DoorKnob" unique_id=17555093]
 script = ExtResource("2_8h08d")
-next_scene = "uid://de73s6a4yw1e1"
+next_scene = "uid://fihn64qyyrg4"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorKnob/StaticBody3D" unique_id=1936753377]
 shape = SubResource("BoxShape3D_xou0q")
@@ -54,6 +53,7 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.7841144, 3.7466156, 
 
 [node name="StaticBody3D" type="StaticBody3D" parent="DoorKnob2" unique_id=814916894]
 script = ExtResource("2_8h08d")
+next_scene = "uid://de73s6a4yw1e1"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorKnob2/StaticBody3D" unique_id=1291414546]
 shape = SubResource("BoxShape3D_xou0q")
@@ -70,9 +70,6 @@ shape = SubResource("BoxShape3D_peagg")
 
 [node name="House" parent="." unique_id=10355956 instance=ExtResource("2_drnsu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.448383, -0.00038719177, 15.77136)
-
-[node name="FlowerPot" parent="." unique_id=186266078 instance=ExtResource("4_j0ytx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16331446, -0.01758051, -1.7918395)
 
 [node name="TeddyBear" parent="." unique_id=578169407 instance=ExtResource("4_drnsu")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.5992187, 1.0365562, -2.1458476)
