@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bkop1h1f5wbk1"]
+
+[ext_resource type="Script" uid="uid://koi26w7a7a8x" path="res://Scenes/Props/door_knob.gd" id="1_7210r"]
+[ext_resource type="PackedScene" uid="uid://dui13iym1ppwi" path="res://Assets/doorhandle/scene.gltf" id="2_ilimg"]
+
+[node name="door_knob" type="Node3D" unique_id=1101211914]
+script = ExtResource("1_7210r")
+
+[node name="Sketchfab_Scene" parent="." unique_id=575409031 instance=ExtResource("2_ilimg")]

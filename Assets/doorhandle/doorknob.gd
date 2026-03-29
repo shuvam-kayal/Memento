@@ -1,4 +1,4 @@
-xtends StaticBody3D
+extends StaticBody3D
 
 const LIVING_ROOM_SCENE = "res://Scenes/Environments/LivingRoom/LivingRoom.tscn"
 
