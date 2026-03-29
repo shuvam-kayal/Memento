@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbxf7s6u6nni4"]
+[gd_scene format=3 uid="uid://cbxf7s6u6nni4"]
 
 [ext_resource type="PackedScene" uid="uid://chr5an4vf130f" path="res://Assets/TeddyBear/scene.gltf" id="1_bi88k"]
 [ext_resource type="Script" uid="uid://xyw5sc01572q" path="res://Scenes/Props/interactable_item.gd" id="1_pqu1i"]
