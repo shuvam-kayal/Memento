@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmw33lk1nk28f"]
+
+[ext_resource type="PackedScene" uid="uid://b2r7dobdfg1f" path="res://Assets/sprinkler/scene.gltf" id="1_d57si"]
+
+[node name="Sprinkler" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_d57si")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
