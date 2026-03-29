@@ -1,11 +1,8 @@
 Model Information:
-* title:	Table
-* source:	https://sketchfab.com/3d-models/table-b0d965790f3048768d8803cb370467b5
-* author:	djkorg (https://sketchfab.com/djkorg)
+* title:	Furniture_ No-21
+* source:	https://sketchfab.com/3d-models/furniture--no-21-8dc8cade646240b3a636ad20de728dd3
+* author:	AshCreations3D (https://sketchfab.com/Fancy_Models_Collections)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
-
-If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Table" (https://sketchfab.com/3d-models/table-b0d965790f3048768d8803cb370467b5) by djkorg (https://sketchfab.com/djkorg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

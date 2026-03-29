@@ -1,19 +1,24 @@
 [gd_scene format=3 uid="uid://ojfrudqwx5y0"]
 
 [ext_resource type="PackedScene" uid="uid://bm8x6rwe1f37s" path="res://Assets/Hallway/scene.gltf" id="1_3q8tx"]
+[ext_resource type="Script" uid="uid://cr5vptuf1agtt" path="res://Assets/Hallway/vis.gd" id="2_fwqqa"]
 [ext_resource type="Script" uid="uid://v54ffyrek4aa" path="res://Scenes/Environments/Hallway/wrong_door_1.gd" id="2_wr0t0"]
 [ext_resource type="Script" uid="uid://bym35cdxnq5fl" path="res://Scenes/Environments/Hallway/right_door.gd" id="3_jncym"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wr0t0"]
-size = Vector3(400, 5, 400)
+size = Vector3(400, 2.1044922, 400)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3q8tx"]
 size = Vector3(42, 85, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fwqqa"]
+size = Vector3(34.394775, 78.51059, 1.1996155)
 
 [node name="Hallway" type="Node" unique_id=1156808042]
 
 [node name="Hallway" parent="." unique_id=711592189 instance=ExtResource("1_3q8tx")]
 transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0, 0, 0)
+script = ExtResource("2_fwqqa")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Hallway" unique_id=1003283238]
 
@@ -37,6 +42,7 @@ text = "Wrong Door!!"
 [node name="StaticBody3D" type="StaticBody3D" parent="Hallway" unique_id=787603471]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/StaticBody3D" unique_id=1428487367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4477539, 0)
 shape = SubResource("BoxShape3D_wr0t0")
 
 [node name="WrongDoor1" type="StaticBody3D" parent="Hallway" unique_id=734966107]
@@ -86,3 +92,10 @@ script = ExtResource("3_jncym")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/RightDoor" unique_id=1959014214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24086, 0, 1.194046)
 shape = SubResource("BoxShape3D_3q8tx")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Hallway" unique_id=316095470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.954575, 38.373474, 182.08397)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/StaticBody3D2" unique_id=328960505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.168335, 4.2336617, -2.8581848)
+shape = SubResource("BoxShape3D_fwqqa")

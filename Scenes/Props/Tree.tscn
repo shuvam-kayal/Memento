@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://ct723bssv7cwi"]
+[gd_scene format=3 uid="uid://ct723bssv7cwi"]
 
 [ext_resource type="PackedScene" uid="uid://d0isc2eu4ga2p" path="res://Assets/Tree/scene.gltf" id="1_6cr10"]
 
