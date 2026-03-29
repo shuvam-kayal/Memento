@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dc8yfujx5ifna"]
+[gd_scene load_steps=0 format=3 uid="uid://dc8yfujx5ifna"]
 
 [ext_resource type="Script" uid="uid://i5tnokb8r35t" path="res://Scenes/Memories/memory_1.gd" id="1_m6wmx"]
 

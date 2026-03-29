@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b5jabct82beu5"]
+[gd_scene load_steps=0 format=3 uid="uid://b5jabct82beu5"]
 
 [ext_resource type="PackedScene" uid="uid://dii8w2gc6udss" path="res://Assets/photo/scene.gltf" id="1_poivw"]
 
