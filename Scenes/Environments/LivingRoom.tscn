@@ -15,7 +15,7 @@ size = Vector3(20, 0.1, 20)
 size = Vector3(10, 3, 0.2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y3kut"]
-size = Vector3(0.3, 0.2, 0.03)
+size = Vector3(0.08, 0.2, 0.03)
 
 [node name="LivingRoom" type="Node2D" unique_id=1532857773]
 
