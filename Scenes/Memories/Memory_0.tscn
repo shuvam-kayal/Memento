@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://saip0k3y26i8"]
+
+[ext_resource type="Script" uid="uid://c8kt7wshihlk6" path="res://Scenes/Memories/Memory_0.gd" id="1_6xn5h"]
+[ext_resource type="PackedScene" uid="uid://0ngwi37yapco" path="res://Assets/yandere_child_2/scene.gltf" id="2_w40hf"]
+[ext_resource type="PackedScene" uid="uid://c60da2obbu0ux" path="res://Assets/fhc_crying_child/scene.gltf" id="3_ayial"]
+[ext_resource type="PackedScene" uid="uid://chwsofxubrch2" path="res://Assets/bench/scene.gltf" id="4_ayial"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w40hf"]
+sky_top_color = Color(0.7058824, 0.627451, 0.8627451, 1)
+sky_horizon_color = Color(1, 0.8235294, 0.7058824, 1)
+ground_bottom_color = Color(0.78431374, 0.7254902, 0.6666667, 1)
+
+[sub_resource type="Sky" id="Sky_ayial"]
+sky_material = SubResource("ProceduralSkyMaterial_w40hf")
+
+[sub_resource type="Environment" id="Environment_f88gt"]
+background_mode = 2
+sky = SubResource("Sky_ayial")
+ambient_light_source = 3
+ambient_light_energy = 0.8
+fog_enabled = true
+fog_light_color = Color(0.9411765, 0.92156863, 1, 1)
+
+[node name="Memory0" type="Node" unique_id=659770398]
+script = ExtResource("1_6xn5h")
+
+[node name="World" type="Node3D" parent="." unique_id=451372744]
+
+[node name="Boy" parent="World" unique_id=203755673 instance=ExtResource("3_ayial")]
+transform = Transform3D(0.18178204, 0, 1.1861514, 0, 1.1999999, 0, -1.1861514, 0, 0.18178204, -0.44694984, -0.005206704, 0)
+
+[node name="Girl" parent="World" unique_id=1326747619 instance=ExtResource("2_w40hf")]
+transform = Transform3D(0.036883794, 0, -0.8491995, 0, 0.85000014, 0, 0.8491995, 0, 0.036883794, 1.732928, 0, 0)
+
+[node name="Bench" parent="World" unique_id=1154770591 instance=ExtResource("4_ayial")]
+transform = Transform3D(9.592796, 0, -2.8245866, 0, 10.000002, 0, 2.8245866, 0, 9.592796, 1.9994538, 0, -0.0947063)
+
+[node name="Camera3D" type="Camera3D" parent="World" unique_id=479119279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3606305, 1, 3)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" unique_id=1360586635]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+light_energy = 1.5
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World" unique_id=523565716]
+environment = SubResource("Environment_f88gt")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=616902762]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1230127826]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=263132086]
+
+[node name="FadeOverlay" type="ColorRect" parent="CanvasLayer" unique_id=1238752124]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="NarrationLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1765052672]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+vertical_alignment = 2
