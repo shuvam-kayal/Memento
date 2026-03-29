@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://djso8yqaiwdet"]
+[gd_scene load_steps=4 format=3 uid="uid://djso8yqaiwdet"]
 
 [ext_resource type="PackedScene" uid="uid://5fg6vruvh31j" path="res://Assets/OldWoman2/scene.gltf" id="1_c3562"]
 [ext_resource type="Script" uid="uid://2pxvgqu7kfla" path="res://Scenes/Characters/OldLady/old_lady_controller.gd" id="1_qd1sg"]
@@ -7,24 +7,24 @@
 radius = 0.1538086
 height = 1.0078125
 
-[node name="OldLady" type="CharacterBody3D" unique_id=331303952]
+[node name="OldLady" type="CharacterBody3D"]
 transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0, 0)
 script = ExtResource("1_qd1sg")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1186286393]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=148701528]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 cast_shadow = 3
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=190285639]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49609375, 0)
 shape = SubResource("CapsuleShape3D_c3562")
 
-[node name="Sketchfab_Scene" parent="." unique_id=185853332 instance=ExtResource("1_c3562")]
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_c3562")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49662662, 0)
 
-[node name="Head" type="Node3D" parent="." unique_id=1491999287]
+[node name="Head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9968043, 0.041871395)
 
-[node name="Camera3D" type="Camera3D" parent="Head" unique_id=416350038]
+[node name="Camera3D" type="Camera3D" parent="Head"]
 transform = Transform3D(-0.90517634, 0, 0.084273525, 0, 0.9090909, 0, -0.084273525, 0, -0.90517634, 0, 0.0049259067, 0.05726741)
