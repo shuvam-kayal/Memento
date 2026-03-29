@@ -3,9 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://dt2dlapkgov0a" path="res://Scenes/Environments/garden/garden.tscn" id="1_gwcpk"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_455xj"]
 
-[node name="Memory2" type="Node3D"]
+[node name="Memory2" type="Node3D" unique_id=783829973]
 
-[node name="Garden" parent="." instance=ExtResource("1_gwcpk")]
+[node name="Garden" parent="." unique_id=512280691 instance=ExtResource("1_gwcpk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36206055, -0.52561295, -0.21515173)
 
-[node name="OldLady" parent="." instance=ExtResource("2_455xj")]
+[node name="OldLady" parent="." unique_id=1164020550 instance=ExtResource("2_455xj")]
 transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0.8713503, -6.980871)
