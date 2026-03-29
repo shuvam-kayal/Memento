@@ -1,5 +1,8 @@
 extends CharacterBody3D
 
+@onready var interact_ray = $Head/Camera3D/RayCast3D
+@onready var interact_prompt = $CanvasLayer/InteractPrompt
+
 const SPEED = 1.0
 const JUMP_VELOCITY = 0
 const MOUSE_SENSITIVITY = 0.002
@@ -43,3 +46,22 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		
+func _process(delta):
+	# 1. Reset the UI every frame just in case we look away
+	interact_prompt.visible = false
+	
+	# 2. Check if the laser is hitting anything
+	if interact_ray.is_colliding():
+		var target = interact_ray.get_collider()
+		
+		# 3. Check if the thing we hit has our OOP "interact" function
+		if target.has_method("interact"):
+			
+			# 4. Turn on the UI prompt
+			interact_prompt.visible = true
+			
+			# 5. Listen for the 'E' key
+			if Input.is_action_just_pressed("interact"):
+				# Call the function on the teddy bear!
+				target.interact()
