@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://yo88dubd42ds"]
+[gd_scene load_steps=12 format=3 uid="uid://yo88dubd42ds"]
 
 [ext_resource type="PackedScene" uid="uid://ccs22qi84t7rn" path="res://Scenes/Props/Table.tscn" id="1_h5w4k"]
 [ext_resource type="PackedScene" uid="uid://d0utjv6fx24kt" path="res://Assets/InteriorHouse/scene.gltf" id="2_drnsu"]
 [ext_resource type="PackedScene" uid="uid://xt617j2qxwmu" path="res://Scenes/Props/Bed.tscn" id="3_j0ytx"]
+[ext_resource type="PackedScene" uid="uid://cbxf7s6u6nni4" path="res://Scenes/Props/TeddyBear.tscn" id="4_drnsu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_h5w4k"]
 size = Vector3(17.522673, 1, 14.320937)
@@ -17,6 +18,8 @@ size = Vector3(1, 2.6782227, 4.378357)
 [sub_resource type="BoxShape3D" id="BoxShape3D_p0ghv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8h08d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yt4ns"]
 
 [node name="House" type="Node3D"]
 
@@ -207,3 +210,13 @@ transform = Transform3D(-1.2350357e-07, 2.052125e-08, -0.2, 1.502309, 0.8829476,
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D23"]
 shape = SubResource("BoxShape3D_8h08d")
+
+[node name="TeddyBear" parent="." instance=ExtResource("4_drnsu")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.5992187, 1.0365562, -2.1458476)
+
+[node name="StaticBody3D24" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.05, 0, 0, 0, 0.5, -1.4907947, 0.9280685, -2.4253976)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05671084, 0.67066526, 0)
+shape = SubResource("BoxShape3D_yt4ns")
