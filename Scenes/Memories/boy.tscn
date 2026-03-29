@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://cetlsfjj6anb0"]
+[gd_scene format=3 uid="uid://cetlsfjj6anb0"]
 
 [ext_resource type="PackedScene" uid="uid://bq3yfjiqrihsj" path="res://Assets/boy/anm_boy.glb" id="1_s0kbs"]
 
