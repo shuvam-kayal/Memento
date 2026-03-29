@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://cgwopapp66kgx" path="res://Assets/livingroom/scene.gltf" id="1_h2t4u"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_in2ku"]
 [ext_resource type="PackedScene" uid="uid://k2qudbb3l2gh" path="res://Assets/Wall/scene.gltf" id="3_6tsx2"]
-[ext_resource type="PackedScene" uid="uid://bu63w0n4q0yi8" path="res://Assets/door/scene.gltf" id="4_7560e"]
+[ext_resource type="PackedScene" uid="uid://benbvgd7lut6o" path="res://Assets/door/scene.gltf" id="4_7560e"]
 [ext_resource type="PackedScene" uid="uid://b6ebw6pbq3cv5" path="res://Assets/photo_frame/scene.gltf" id="5_y3kut"]
 [ext_resource type="PackedScene" uid="uid://b5jabct82beu5" path="res://Scenes/Props/Photo.tscn" id="6_y3kut"]
-[ext_resource type="Script" uid="uid://b6dcm8innglvh" path="res://Scenes/Environments/Photo.gd" id="7_manl4"]
+[ext_resource type="Script" path="res://Scenes/Environments/LivingRoom/Photo.gd" id="7_ox8qo"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_manl4"]
 size = Vector3(5.7458496, 2.30719, 0.28851318)
@@ -51,7 +51,7 @@ size = Vector3(20, 0.1, 20)
 size = Vector3(10, 3, 0.2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y3kut"]
-size = Vector3(0.06058838, 0.05714111, 0.009487305)
+size = Vector3(0.049703367, 0.05714111, 0.011091309)
 
 [node name="LivingRoom" type="Node2D" unique_id=1532857773]
 
@@ -161,8 +161,8 @@ transform = Transform3D(-0.049194247, 0, -0.008940117, 0, 0.049999997, 0, 0.0089
 transform = Transform3D(5.8904166, 0.78862244, -6.8771067, -0.73127186, 5.937885, 3.7892663, 0.87647504, -0.34582654, 49.379612, -2.1756184, -0.5290934, -0.01587329)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Photo" unique_id=88919209]
-script = ExtResource("7_manl4")
+script = ExtResource("7_ox8qo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Photo/StaticBody3D" unique_id=1969021308]
-transform = Transform3D(0.9999967, -4.501082e-06, 7.1525574e-07, -4.284084e-08, 0.9999698, -1.013279e-06, 1.0058284e-07, 9.313226e-09, 0.9999998, 0.01932767, 0.00013323128, -0.0023310021)
+transform = Transform3D(1.4999999, -1.414679e-06, -8.34465e-07, -3.4458935e-08, 1.4999937, -5.2452087e-06, 1.527369e-07, 3.259629e-08, 1.5, 0.012108982, -0.00023962557, -0.0027672849)
 shape = SubResource("BoxShape3D_y3kut")
