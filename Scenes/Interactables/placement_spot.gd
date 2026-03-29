@@ -9,8 +9,8 @@ func interact():
 		Global.is_carrying_flowerpot = false
 		
 		# 3. Un-hide our fake table pot!
-		$HeldFlowerpot.visible = true
-		
+		$Flowerpot.visible = true
+
 		# 4. Turn off this hitbox so she can't click the empty air again
 		$CollisionShape3D.disabled = true
 	else:

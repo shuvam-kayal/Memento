@@ -1,18 +1,22 @@
-[gd_scene format=3 uid="uid://bjgyaxhkj6h1s"]
+[gd_scene load_steps=4 format=3 uid="uid://bjgyaxhkj6h1s"]
 
 [ext_resource type="PackedScene" uid="uid://yo88dubd42ds" path="res://Scenes/Environments/House/House.tscn" id="1_7noh3"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_in6ly"]
+[ext_resource type="PackedScene" uid="uid://c26exgh63jy28" path="res://Scenes/Interactables/PlacementSpot.tscn" id="3_in6ly"]
 
-[node name="Level01" type="Node3D" unique_id=763022105]
+[node name="Level01" type="Node3D"]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1437372373]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.998894, 0, -0.04701922, -0.008189045, 0.9847167, 0.17397116, 0.04630061, 0.17416379, -0.9836276, 0, 3.7419543, -8.630421)
 
-[node name="House" parent="." unique_id=462720675 instance=ExtResource("1_7noh3")]
+[node name="House" parent="." instance=ExtResource("1_7noh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25413346, -1.9187608, -1.3844895)
 
-[node name="OldLady" parent="." unique_id=934252672 instance=ExtResource("2_in6ly")]
+[node name="OldLady" parent="." instance=ExtResource("2_in6ly")]
 transform = Transform3D(0.22028291, 0, 1.0777177, 0, 1.1, 0, -1.0777177, 0, 0.22028291, -3.4951854, -1.8194864, -2.5371923)
 
-[node name="Spawn_FromRooftop" type="Marker3D" parent="." unique_id=1117536440]
+[node name="Spawn_FromRooftop" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0481946, 0.977723, 0.8585944)
+
+[node name="PlacementSpot" parent="." instance=ExtResource("3_in6ly")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2581706, -1.7101431, -4.2060995)
