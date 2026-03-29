@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://cgwopapp66kgx" path="res://Assets/livingroom/scene.gltf" id="1_h2t4u"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_in2ku"]
-[ext_resource type="PackedScene" uid="uid://k2qudbb3l2gh" path="res://Assets/gallery_bare_concrete_wall/scene.gltf" id="3_6tsx2"]
-[ext_resource type="PackedScene" uid="uid://bu63w0n4q0yi8" path="res://Assets/modern_wood_door/scene.gltf" id="4_7560e"]
+[ext_resource type="PackedScene" uid="uid://k2qudbb3l2gh" path="res://Assets/Wall/scene.gltf" id="3_6tsx2"]
+[ext_resource type="PackedScene" uid="uid://bu63w0n4q0yi8" path="res://Assets/door/scene.gltf" id="4_7560e"]
 [ext_resource type="PackedScene" uid="uid://b6ebw6pbq3cv5" path="res://Assets/photo_frame/scene.gltf" id="5_y3kut"]
 [ext_resource type="PackedScene" uid="uid://b5jabct82beu5" path="res://Scenes/Props/Photo.tscn" id="6_y3kut"]
 [ext_resource type="Script" uid="uid://b6dcm8innglvh" path="res://Scenes/Environments/Photo.gd" id="7_manl4"]
