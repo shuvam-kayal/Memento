@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://ewm7rg8p8slo"]
+
+[ext_resource type="PackedScene" uid="uid://bdb4a8stxx5pr" path="res://Assets/Table/scene.gltf" id="1_7blf7"]
+[ext_resource type="PackedScene" uid="uid://bvackfplerpny" path="res://Assets/birthday_room/scene.gltf" id="1_fc05u"]
+[ext_resource type="PackedScene" uid="uid://dws37c8ra2vn" path="res://Assets/party/scene.gltf" id="1_hu8fo"]
+[ext_resource type="PackedScene" uid="uid://cj5m8ayvy36sn" path="res://Scenes/Characters/YoungLady/Young_Lady.tscn" id="2_jv6vk"]
+[ext_resource type="PackedScene" uid="uid://dh8rof8701idr" path="res://Assets/carpet/scene.gltf" id="3_tpyfx"]
+[ext_resource type="PackedScene" uid="uid://omk606ae6x1s" path="res://Assets/Cake/scene.gltf" id="4_hu8fo"]
+[ext_resource type="PackedScene" uid="uid://b3dhaufkmq0tp" path="res://Assets/baloons/scene.gltf" id="6_bilrn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hu8fo"]
+size = Vector3(2.8, 1, 1.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fc05u"]
+size = Vector3(100, 2, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bilrn"]
+size = Vector3(16.493134, 4.6487427, 0.5)
+
+[node name="BirthdayRoom" type="Node3D" unique_id=207551414]
+
+[node name="party" parent="." unique_id=1170183928 instance=ExtResource("1_hu8fo")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 3.4635546, -1.762988)
+
+[node name="party2" parent="." unique_id=570961745 instance=ExtResource("1_hu8fo")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 1.2248759, 3.4635546, -1.7994752)
+
+[node name="party3" parent="." unique_id=771533974 instance=ExtResource("1_hu8fo")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 1.2248759, 3.4635546, 2.3018808)
+
+[node name="party4" parent="." unique_id=1637453466 instance=ExtResource("1_hu8fo")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.19439363, 3.4635546, 2.3018808)
+
+[node name="table" parent="." unique_id=1817784230 instance=ExtResource("1_7blf7")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, 2.3508937, 0.2714634, 0.37570643)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="table" unique_id=1515792237]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table/StaticBody3D" unique_id=410527197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4847831, 0)
+shape = SubResource("BoxShape3D_hu8fo")
+
+[node name="room" parent="." unique_id=76029230 instance=ExtResource("1_fc05u")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="room" unique_id=468696927]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="room/StaticBody3D" unique_id=778975622]
+shape = SubResource("BoxShape3D_fc05u")
+
+[node name="carpet" parent="." unique_id=576842962 instance=ExtResource("3_tpyfx")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -3.2269573, 0.28647685, 0.32426107)
+
+[node name="cake" parent="." unique_id=1255548091 instance=ExtResource("4_hu8fo")]
+transform = Transform3D(1.75, 0, 0, 0, 1.75, 0, 0, 0, 1.75, 2.3414805, 1.2243096, 0.51189804)
+
+[node name="bloons" parent="." unique_id=1127714505 instance=ExtResource("6_bilrn")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 7.097481, 2.2154598, 0.046735883)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1842721993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6896186, -6.274505)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1188415531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.042236328, 0.6166687, 0)
+shape = SubResource("BoxShape3D_bilrn")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1264074544]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.085414, 0.6166687, 6.3485537)
+shape = SubResource("BoxShape3D_bilrn")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=400599479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10366678, 0.6166687, 12.6850605)
+shape = SubResource("BoxShape3D_bilrn")
+
+[node name="OldLady" parent="." unique_id=650622921 instance=ExtResource("2_jv6vk")]
+transform = Transform3D(-6.9938224e-08, 0, 1.6, 0, 1.6, 0, -1.6, 0, -6.9938224e-08, -5.96556, 0.31877142, 0.20274436)
