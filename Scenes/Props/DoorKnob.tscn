@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://ddaxshij57v56"]
+[gd_scene format=3 uid="uid://ddaxshij57v56"]
 
 [ext_resource type="PackedScene" uid="uid://dvpif6w35r6do" path="res://Assets/doorknob/scene.gltf" id="1_yocp1"]
 [ext_resource type="Script" uid="uid://cilt7j2kqoxk" path="res://Scenes/Props/doorknob.gd" id="2_65yec"]
