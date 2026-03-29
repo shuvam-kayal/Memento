@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt2dlapkgov0a"]
+
+[ext_resource type="PackedScene" uid="uid://d2fwm7tukom3f" path="res://Assets/garden/scene.gltf" id="1_0biv1"]
+[ext_resource type="PackedScene" uid="uid://baucl0br58big" path="res://Scenes/Props/flowerpot.tscn" id="2_q6mqb"]
+[ext_resource type="PackedScene" uid="uid://cmw33lk1nk28f" path="res://Scenes/Props/sprinkler.tscn" id="3_avp2h"]
+
+[node name="Garden" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_0biv1")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="Flowerpot" parent="." instance=ExtResource("2_q6mqb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7456117, 0.979301, -6.766647)
+
+[node name="Sprinkler" parent="." instance=ExtResource("3_avp2h")]
+transform = Transform3D(0.36362162, 0, -0.59814656, 0, 0.6999999, 0, 0.59814656, 0, 0.36362162, 5.9333405, 0.56867373, 0.8075752)
