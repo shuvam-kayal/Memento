@@ -5,7 +5,7 @@ extends CharacterBody3D
 
 const SPEED = 2.0
 const JUMP_VELOCITY = 0
-const MOUSE_SENSITIVITY = 0.0005
+const MOUSE_SENSITIVITY = 0.001
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
