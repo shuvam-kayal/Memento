@@ -1,10 +1,7 @@
 [gd_scene format=3 uid="uid://bjgyaxhkj6h1s"]
 
 [ext_resource type="PackedScene" uid="uid://yo88dubd42ds" path="res://Scenes/Environments/House/House.tscn" id="1_7noh3"]
-[ext_resource type="PackedScene" uid="uid://b6ebw6pbq3cv5" path="res://Assets/photo_frame/scene.gltf" id="2_egvei"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_in6ly"]
-[ext_resource type="PackedScene" uid="uid://b8rdyyp1ipngc" path="res://Assets/table/scene.gltf" id="3_48sdu"]
-[ext_resource type="PackedScene" uid="uid://dui13iym1ppwi" path="res://Assets/doorhandle/scene.gltf" id="3_in6ly"]
 
 [node name="Level01" type="Node3D" unique_id=763022105]
 
@@ -13,15 +10,6 @@ transform = Transform3D(-0.998894, 0, -0.04701922, -0.008189045, 0.9847167, 0.17
 
 [node name="House" parent="." unique_id=462720675 instance=ExtResource("1_7noh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25413346, -1.9187608, -1.3844895)
-
-[node name="photoframe" parent="House" unique_id=1389596061 instance=ExtResource("2_egvei")]
-transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0.28988743, 0.383852, -9.8801155)
-
-[node name="table" parent="House" unique_id=2134106947 instance=ExtResource("3_48sdu")]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.8395436, -0.01656425, -2.150794)
-
-[node name="doorknob" parent="House" unique_id=767546307 instance=ExtResource("3_in6ly")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.8506773, 0.80974245, 2.0311027)
 
 [node name="OldLady" parent="." unique_id=934252672 instance=ExtResource("2_in6ly")]
 transform = Transform3D(0.22028291, 0, 1.0777177, 0, 1.1, 0, -1.0777177, 0, 0.22028291, -3.4951854, -2.0736203, -2.5371923)

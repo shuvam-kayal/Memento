@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqspj3fe1fus5"]
+[gd_scene format=3 uid="uid://bqspj3fe1fus5"]
 
 [ext_resource type="PackedScene" uid="uid://coyfwx2pdabis" path="res://Assets/Grass/scene.gltf" id="1_rodum"]
 
