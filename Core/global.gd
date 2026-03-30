@@ -4,6 +4,7 @@ var is_carrying_flowerpot = false
 var target_spawn_point: String = ""
 var has_rooftop_pot_been_taken: bool = false
 var is_carrying_sprinkler: bool = false
+var medicine_memory_done: bool = false
 
 
 var completed_objectives = []
