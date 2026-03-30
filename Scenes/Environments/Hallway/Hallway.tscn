@@ -17,7 +17,7 @@ size = Vector3(34.394775, 78.51059, 1.1996155)
 [node name="Hallway" type="Node" unique_id=1156808042]
 
 [node name="Hallway" parent="." unique_id=711592189 instance=ExtResource("1_3q8tx")]
-transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0, 0, 0)
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0)
 script = ExtResource("2_fwqqa")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Hallway" unique_id=1003283238]

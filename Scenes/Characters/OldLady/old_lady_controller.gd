@@ -86,3 +86,4 @@ func _process(delta):
 		
 	if has_node("Head/Camera3D/Sprinkler"):
 		$Head/Camera3D/Sprinkler.visible = Global.is_carrying_sprinkler
+		
