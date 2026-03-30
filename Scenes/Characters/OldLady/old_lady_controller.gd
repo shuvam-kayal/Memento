@@ -81,4 +81,8 @@ func _process(delta):
 				target.interact()
 				
 	# THIS is the correct way to talk to the node!
-	$Head/Camera3D/Flowerpot2.visible = Global.is_carrying_flowerpot
+	if has_node("Head/Camera3D/Flowerpot2"):
+		$Head/Camera3D/Flowerpot2.visible = Global.is_carrying_flowerpot
+		
+	if has_node("Head/Camera3D/Sprinkler"):
+		$Head/Camera3D/Sprinkler.visible = Global.is_carrying_sprinkler

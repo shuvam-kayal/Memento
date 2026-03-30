@@ -1,19 +1,22 @@
 extends StaticBody3D
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+# This lets you select your Memory scene in the Inspector!
+@export_file("*.tscn") var memory_scene_path: String
 
+func _ready():
+	# When the roof loads, check if we already took this pot.
+	# If we did, delete it instantly so it doesn't respawn!
+	if Global.has_rooftop_pot_been_taken == true:
+		queue_free()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-	
 func interact():
-	print("Starting Memory Scene... (Placeholder)")
+	print("Diving into Memory Scene...")
 	
-	# Tell the global memory we picked it up
-	Global.is_carrying_flowerpot = true
+	# 2. Tell the game this pot is permanently gone from the roof
+	Global.has_rooftop_pot_been_taken = true
 	
-	# Delete the pot from the rooftop since it's in our hands now
-	queue_free()
+	# 3. Teleport to the Memory Scene!
+	if memory_scene_path != "":
+		get_tree().change_scene_to_file(memory_scene_path)
+	else:
+		print("ERROR: You forgot to assign the memory scene in the Inspector!")

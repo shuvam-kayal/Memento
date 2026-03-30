@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dra1pavrldkm3"
-path.s3tc="res://.godot/imported/Default_OBJ.001_metallicRoughness.png-1c11372c912ac0e3cba4fc6726a8835c.s3tc.ctex"
+uid="uid://ccg8mi85d7vqi"
+path.s3tc="res://.godot/imported/girl1_girl_MAT_baseColor.png-ec397889c4c8d9df9f8eb60e65a7d3c6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "be6095984a4c1b2ed7850b11f731660f"
+}
 
 [deps]
 
-source_file="res://Assets/Tree/textures/Default_OBJ.001_metallicRoughness.png"
-dest_files=["res://.godot/imported/Default_OBJ.001_metallicRoughness.png-1c11372c912ac0e3cba4fc6726a8835c.s3tc.ctex"]
+source_file="res://Assets/party_bbd/girl1_girl_MAT_baseColor.png"
+dest_files=["res://.godot/imported/girl1_girl_MAT_baseColor.png-ec397889c4c8d9df9f8eb60e65a7d3c6.s3tc.ctex"]
 
 [params]
 

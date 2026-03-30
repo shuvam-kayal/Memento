@@ -30,3 +30,7 @@ transform = Transform3D(-0.19475543, 0, 1.0826219, 0, 1.1, 0, -1.0826219, 0, -0.
 
 [node name="Flowerpot" parent="." instance=ExtResource("4_d6nqk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8773623, 0.3100376, 2.135457)
+memory_scene_path = "uid://btbf7b5uaojqq"
+
+[node name="Spawn_AfterMemory" type="Marker3D" parent="."]
+transform = Transform3D(0.9317546, 0, -0.3630886, 0, 1, 0, 0.3630886, 0, 0.9317546, -0.33190322, 0.053119123, 1.1145542)

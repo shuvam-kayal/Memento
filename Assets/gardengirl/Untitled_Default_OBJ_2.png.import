@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctdduxwefd3qf"
-path.s3tc="res://.godot/imported/Default_OBJ.001_baseColor.png-a673becbf323af85090e1548df8af9e1.s3tc.ctex"
+uid="uid://c7jodjt08bthg"
+path.s3tc="res://.godot/imported/Untitled_Default_OBJ_2.png-1a0c43c85a90fa1af02fc1d65035d503.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "b77715a9e24aa61a96b8c8ad4acd371b"
+}
 
 [deps]
 
-source_file="res://Assets/Tree/textures/Default_OBJ.001_baseColor.png"
-dest_files=["res://.godot/imported/Default_OBJ.001_baseColor.png-a673becbf323af85090e1548df8af9e1.s3tc.ctex"]
+source_file="res://Assets/gardengirl/Untitled_Default_OBJ_2.png"
+dest_files=["res://.godot/imported/Untitled_Default_OBJ_2.png-1a0c43c85a90fa1af02fc1d65035d503.s3tc.ctex"]
 
 [params]
 

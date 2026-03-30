@@ -1,12 +1,49 @@
-[gd_scene format=3 uid="uid://btbf7b5uaojqq"]
+[gd_scene load_steps=9 format=3 uid="uid://btbf7b5uaojqq"]
 
 [ext_resource type="PackedScene" uid="uid://dt2dlapkgov0a" path="res://Scenes/Environments/garden/garden.tscn" id="1_gwcpk"]
 [ext_resource type="PackedScene" uid="uid://djso8yqaiwdet" path="res://Scenes/Characters/OldLady/OldLady.tscn" id="2_455xj"]
+[ext_resource type="PackedScene" uid="uid://cmiwqfdxtrcb6" path="res://Scenes/Characters/GardenGirl/childstatic.tscn" id="3_455xj"]
+[ext_resource type="PackedScene" uid="uid://cmw33lk1nk28f" path="res://Scenes/Props/sprinkler.tscn" id="4_3v6bu"]
+[ext_resource type="PackedScene" uid="uid://bmnexblix7hyh" path="res://Scenes/Props/heldFlowerpot.tscn" id="5_gq31d"]
 
-[node name="Memory2" type="Node3D" unique_id=783829973]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gwcpk"]
+sky_energy_multiplier = 1.3
 
-[node name="Garden" parent="." unique_id=512280691 instance=ExtResource("1_gwcpk")]
+[sub_resource type="Sky" id="Sky_455xj"]
+sky_material = SubResource("ProceduralSkyMaterial_gwcpk")
+
+[sub_resource type="Environment" id="Environment_3v6bu"]
+background_mode = 2
+sky = SubResource("Sky_455xj")
+
+[node name="Memory2" type="WorldEnvironment"]
+environment = SubResource("Environment_3v6bu")
+
+[node name="Garden" parent="." instance=ExtResource("1_gwcpk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36206055, -0.52561295, -0.21515173)
 
-[node name="OldLady" parent="." unique_id=1164020550 instance=ExtResource("2_455xj")]
-transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0.8713503, -6.980871)
+[node name="OldLady" parent="." instance=ExtResource("2_455xj")]
+transform = Transform3D(-0.8062023, 0, -0.7483568, 0, 1.1, 0, 0.7483568, 0, -0.8062023, 0, 0.25042874, -7.4224963)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.52174973, 0.14104442, 0.84135824, -0.84070915, 0.25248063, 0.4790216, -0.14486334, -0.957267, 0.250309, 16.76286, 5.733829, 0)
+
+[node name="DialogueUI" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="DialogueUI"]
+offset_left = 347.0
+offset_top = 589.0
+offset_right = 387.0
+offset_bottom = 612.0
+horizontal_alignment = 1
+
+[node name="Childstatic" parent="." node_paths=PackedStringArray("dialogue_label") instance=ExtResource("3_455xj")]
+transform = Transform3D(0.67610496, 0, 0.4276471, 0, 0.8, 0, -0.4276471, 0, 0.67610496, -2.6586332, 0.32445204, -8.025248)
+dialogue_label = NodePath("../DialogueUI/Label")
+
+[node name="Sprinkler" parent="." node_paths=PackedStringArray("dialogue_label") instance=ExtResource("4_3v6bu")]
+transform = Transform3D(-0.32718366, 0, -0.6188302, 0, 0.7, 0, 0.6188302, 0, -0.32718366, 5.390546, 0.04371807, -0.2553215)
+dialogue_label = NodePath("../DialogueUI/Label")
+
+[node name="Flowerpot" parent="." instance=ExtResource("5_gq31d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4265993, 0.3134389, -7.191417)

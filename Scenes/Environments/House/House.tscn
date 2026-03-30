@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://yo88dubd42ds"]
+[gd_scene load_steps=19 format=3 uid="uid://yo88dubd42ds"]
 
 [ext_resource type="PackedScene" uid="uid://ccs22qi84t7rn" path="res://Scenes/Props/Table.tscn" id="1_h5w4k"]
 [ext_resource type="PackedScene" uid="uid://ddaxshij57v56" path="res://Scenes/Props/DoorKnob.tscn" id="1_p0ghv"]
@@ -71,8 +71,8 @@ shape = SubResource("BoxShape3D_peagg")
 [node name="House" parent="." instance=ExtResource("2_drnsu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.448383, -0.00038719177, 15.77136)
 
-[node name="TeddyBear" parent="." unique_id=578169407 instance=ExtResource("4_drnsu")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.5992187, 1.0365562, -2.1458476)
+[node name="TeddyBear" parent="." instance=ExtResource("4_drnsu")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.5992187, 1.0409148, -2.0974567)
 
 [node name="doorhandle" parent="." instance=ExtResource("6_gf4dq")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 3.838656, 0.82144874, 2.0361543)
