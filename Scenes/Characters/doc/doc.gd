@@ -39,11 +39,12 @@ func advance_dialogue():
 func finish_memory():
 	print("Waking up from memory...")
 	
-	# 1. Turn on the "Fear" state in the Global script!
 	Global.medicine_memory_done = true
-	
-	# 2. Tell the game exactly where to place her in the cabinet room
 	Global.target_spawn_point = "Spawn_AfterMedicine"
 	
-	# 3. Teleport back to the present (Change this to your exact room path!)
+	# --- NEW: UPDATE THE OBJECTIVE TO THE DOOR ---
+	Global.completed_objectives.append("Find your medicines")
+	Global.current_objective_index = 5 # Moves to "Answer the door"
+	
+	# Teleport back to the present
 	get_tree().change_scene_to_file("res://Scenes/Level_01.tscn")

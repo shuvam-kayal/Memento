@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var interact_ray = $Head/Camera3D/RayCast3D
 @onready var interact_prompt = $CanvasLayer/InteractPrompt
 
-const SPEED = 1.5
+const SPEED = 4
 const JUMP_VELOCITY = 0
 const MOUSE_SENSITIVITY = 0.001
 

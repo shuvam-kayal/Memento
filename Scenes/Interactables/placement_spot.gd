@@ -1,17 +1,15 @@
 extends StaticBody3D
 
 func interact():
-	# 1. Check if the Old Lady is actually holding it
 	if Global.is_carrying_flowerpot == true:
 		print("Placing flowerpot!")
-		
-		# 2. Update Global memory so it disappears from her hands
 		Global.is_carrying_flowerpot = false
-		
-		# 3. Un-hide our fake table pot!
 		$Flowerpot.visible = true
-
-		# 4. Turn off this hitbox so she can't click the empty air again
 		$CollisionShape3D.disabled = true
+		
+		# --- NEW: UPDATE THE OBJECTIVE TO MEDICINES ---
+		Global.completed_objectives.append("Decorate with the flower pot(Get it from rooftop)")
+		Global.current_objective_index = 4 # Moves to "Find your medicines"
+		
 	else:
 		print("I need to find the flowerpot first.")
