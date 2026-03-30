@@ -8,4 +8,6 @@ func _ready():
 	await get_tree().create_timer(5.0).timeout
 	Global.target_spawn_point = "SpawnFromLivingRoom"
 	Global.is_in_memory = false
+	MusicManager.play_track("res://Assets/Music/music1.mp3")
+	Global.target_spawn_point = "SpawnFromLivingRoom"
 	get_tree().change_scene_to_file("res://Scenes/Level_01.tscn")
