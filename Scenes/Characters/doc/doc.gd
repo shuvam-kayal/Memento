@@ -1,38 +1,38 @@
-extends Node3D # Or StaticBody3D, either works fine here!
+extends Node3D
 
 @export var dialogue_label: Label
 
-# The Doctor's heavy dialogue lines
 var memory_dialogue = [
 	"Doctor: Please, sit down. I have the results from your cognitive exams.\n[Press Space]",
 	"Doctor: The gaps you've been experiencing... the confusion. It isn't just normal aging or stress.\n[Press Space]",
 	"Doctor: I'm so sorry. The scans show early, but definitive, signs of dementia.\n[Press Space]",
-	"Doctor: We need to talk about a care plan before it progresses further.\n[Press Space to wake up]"
+    "Doctor: We need to talk about a care plan before it progresses further.\n[Press Space to wake up]"
 ]
 
 var current_line = 0
+var music_player: AudioStreamPlayer
 
 func _ready():
-	# 1. Lock the mouse so the player can't look away from the doctor
+	# Start memory music
+	Global.is_in_memory = true
+	MusicManager.stop_music()
+	music_player = AudioStreamPlayer.new()
+	add_child(music_player)
+	music_player.stream = load("res://Assets/Music/music6.mp3")
+	music_player.play()
+
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
-	# 2. Immediately print the first line of dialogue to the screen
 	if dialogue_label:
 		dialogue_label.text = memory_dialogue[0]
 
 func _process(delta):
-	# Listen for the Spacebar (or Enter)
 	if Input.is_action_just_pressed("ui_accept"):
 		advance_dialogue()
 
 func advance_dialogue():
 	current_line += 1
-	
-	# If there are still lines left, show the next one
 	if current_line < memory_dialogue.size():
 		dialogue_label.text = memory_dialogue[current_line]
-	
-	# If we ran out of lines, the memory is over!
 	else:
 		finish_memory()
 
