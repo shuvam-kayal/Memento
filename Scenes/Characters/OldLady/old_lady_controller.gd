@@ -13,7 +13,21 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var head = $Head
 
 func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	# Capture the mouse so we can look around
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+	# Check if we came through a specific door
+	if Global.target_spawn_point != "":
+		# Ask the Level to find the marker with that exact name
+		var spawn_node = get_tree().current_scene.find_child(Global.target_spawn_point, true, false)
+		
+		if spawn_node:
+			# Teleport her and rotate her to match the marker
+			global_position = spawn_node.global_position
+			global_rotation = spawn_node.global_rotation
+			
+		# Wipe the memory clean so she doesn't accidentally spawn here next time she loads a save file!
+		Global.target_spawn_point = ""
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -65,3 +79,10 @@ func _process(delta):
 			if Input.is_action_just_pressed("interact"):
 				# Call the function on the teddy bear!
 				target.interact()
+				
+	# THIS is the correct way to talk to the node!
+	if has_node("Head/Camera3D/Flowerpot2"):
+		$Head/Camera3D/Flowerpot2.visible = Global.is_carrying_flowerpot
+		
+	if has_node("Head/Camera3D/Sprinkler"):
+		$Head/Camera3D/Sprinkler.visible = Global.is_carrying_sprinkler

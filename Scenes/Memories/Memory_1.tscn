@@ -1,13 +1,16 @@
-[gd_scene format=3 uid="uid://dc8yfujx5ifna"]
+[gd_scene load_steps=4 format=3 uid="uid://dc8yfujx5ifna"]
 
 [ext_resource type="Script" uid="uid://i5tnokb8r35t" path="res://Scenes/Memories/memory_1.gd" id="1_m6wmx"]
 [ext_resource type="PackedScene" uid="uid://ojfrudqwx5y0" path="res://Scenes/Environments/Hallway/Hallway.tscn" id="2_tl064"]
 [ext_resource type="PackedScene" uid="uid://cj5m8ayvy36sn" path="res://Scenes/Characters/YoungLady/Young_Lady.tscn" id="3_yjc5s"]
 
-[node name="Memory1" type="Node" unique_id=1498002606]
+[node name="Memory1" type="Node"]
 script = ExtResource("1_m6wmx")
 
-[node name="Hallway" parent="." unique_id=1156808042 instance=ExtResource("2_tl064")]
+[node name="Hallway" parent="." instance=ExtResource("2_tl064")]
 
-[node name="OldLady" parent="." unique_id=650622921 instance=ExtResource("3_yjc5s")]
+[node name="OldLady" parent="." instance=ExtResource("3_yjc5s")]
 transform = Transform3D(-0.0020508433, 0, 4.6999993, 0, 4.7, 0, -4.6999993, 0, -0.0020508433, -10.500568, 0, 7.8813972)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.08819886, 0.99610287, 0, -0.99610287, 0.08819886, 1.3298299, 12.636939, 6.988446)
