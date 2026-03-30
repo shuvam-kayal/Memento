@@ -16,6 +16,8 @@ const MAIN_SCENE = "res://Scenes/Level_01.tscn"
 @onready var anim_player   = $AnimationPlayer
 
 func _ready():
+	
+	Global.is_in_memory = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	fade_overlay.color = Color(0, 0, 0, 1)
 
@@ -44,4 +46,5 @@ func _play_memory():
 	await fade_out_tween.finished
 
 	# --- RETURN TO MAIN SCENE ---
+	Global.is_in_memory = false
 	get_tree().change_scene_to_file(MAIN_SCENE)

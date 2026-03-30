@@ -101,3 +101,19 @@ transform = Transform3D(-0.015915185, 0, 1.0998849, 0, 1.1, 0, -1.0998849, 0, -0
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1146360607]
 transform = Transform3D(0.6136378, 0, -0.78958774, 0, 1, 0, 0.78958774, 0, 0.6136378, -6.2911954, 1.4529657, 3.4322548)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=249895997]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=177055512]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -73.0
+offset_right = 73.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.78431374, 0.19607843, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 18
+text = "Playing Memories.."
+horizontal_alignment = 1
