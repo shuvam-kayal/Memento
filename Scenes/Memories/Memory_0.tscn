@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://duforibqxy41u" path="res://Scenes/Characters/Girl/girl_swing.tscn" id="5_ixtt6"]
 [ext_resource type="PackedScene" uid="uid://ct723bssv7cwi" path="res://Scenes/Props/Tree.tscn" id="6_ixtt6"]
 [ext_resource type="PackedScene" uid="uid://bqspj3fe1fus5" path="res://Scenes/Props/grass.tscn" id="7_0wyb8"]
+[ext_resource type="AudioStream" uid="uid://dme8an7k84bd4" path="res://Assets/Music/music4.mp3" id="8_0wyb8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w40hf"]
 sky_top_color = Color(0.7058824, 0.627451, 0.8627451, 1)
@@ -162,6 +163,7 @@ transform = Transform3D(0.59008443, 0, 0.8073415, 0, 1, 0, -0.8073415, 0, 0.5900
 transform = Transform3D(0.59008443, 0, 0.8073415, 0, 1, 0, -0.8073415, 0, 0.59008443, -1.2580882, -0.009328485, 2.1275349)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1759267518]
+stream = ExtResource("8_0wyb8")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=669167738]
 
@@ -225,6 +227,6 @@ grow_horizontal = 2
 theme_override_colors/font_color = Color(1, 0.78431374, 0.19607843, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 22
 text = "Playing Memories"
 horizontal_alignment = 1

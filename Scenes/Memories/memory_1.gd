@@ -13,5 +13,8 @@ func show_wrong_door():
 		print("Error: Could not find WrongDoorLabel!")
 
 func enter_birthday_room():
-	Global.is_in_memory = false
+	Global.is_in_memory = true
+	# Stop global music, play memory music
+	MusicManager.stop_music()
+	MusicManager.play_track("res://Assets/Music/music5.mp3")
 	get_tree().change_scene_to_file("res://Scenes/Environments/BirthdayRoom/birthday_room.tscn")
