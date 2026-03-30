@@ -21,6 +21,7 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 [autoload]
 
 Global="*res://Core/global.gd"
+MusicManager="*uid://ds15dy761mufp"
 
 [filesystem]
 

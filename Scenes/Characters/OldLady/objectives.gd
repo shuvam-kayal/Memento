@@ -7,6 +7,7 @@ var objectives = [
 	"Interact with the teddy bear on the shelf",
 	"Clean the table(Get Cloth from second room in top floor)",
 	"Decorate with the flower pot(Get it from rooftop)",
+	"Get your Medicine (Ground Floor)",
     "Answer the door"
 ]
 
