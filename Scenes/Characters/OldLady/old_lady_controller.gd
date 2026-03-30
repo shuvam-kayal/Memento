@@ -3,8 +3,8 @@ extends CharacterBody3D
 @onready var interact_ray = $Head/Camera3D/RayCast3D
 @onready var interact_prompt = $CanvasLayer/InteractPrompt
 
-const SPEED = 4.0
-const JUMP_VELOCITY = 1
+const SPEED = 1.5
+const JUMP_VELOCITY = 0
 const MOUSE_SENSITIVITY = 0.001
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
