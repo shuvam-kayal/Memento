@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ojfrudqwx5y0"]
 
 [ext_resource type="PackedScene" uid="uid://bm8x6rwe1f37s" path="res://Assets/Hallway/scene.gltf" id="1_3q8tx"]
-[ext_resource type="Script" uid="uid://cr5vptuf1agtt" path="res://Assets/Hallway/vis.gd" id="2_fwqqa"]
+[ext_resource type="Script" path="res://Assets/Hallway/vis.gd" id="2_fwqqa"]
 [ext_resource type="Script" uid="uid://v54ffyrek4aa" path="res://Scenes/Environments/Hallway/wrong_door_1.gd" id="2_wr0t0"]
 [ext_resource type="Script" uid="uid://bym35cdxnq5fl" path="res://Scenes/Environments/Hallway/right_door.gd" id="3_jncym"]
 

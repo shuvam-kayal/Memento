@@ -1,13 +1,8 @@
 extends StaticBody3D
 
-const MEMORY_0_SCENE = "res://Scenes/Memories/Memory_0.tscn"
-
-func _ready() -> void:
-	pass
-
-# Called by the player when they press E
 func interact():
-	get_tree().change_scene_to_file(MEMORY_0_SCENE)
-
-func _process(_delta: float) -> void:
-	pass
+	if Global.current_memory == 0:
+		Global.completed_objectives.append("Interact with the teddy bear on the shelf")
+		Global.current_objective_index = 2
+		Global.current_memory = 1
+		get_tree().change_scene_to_file("res://Scenes/Memories/Memory_0.tscn")

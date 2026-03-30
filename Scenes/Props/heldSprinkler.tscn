@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://snr4k4epue27"]
+[gd_scene format=3 uid="uid://snr4k4epue27"]
 
 [ext_resource type="PackedScene" uid="uid://b2r7dobdfg1f" path="res://Assets/sprinkler/scene.gltf" id="2_aqtd0"]
 
