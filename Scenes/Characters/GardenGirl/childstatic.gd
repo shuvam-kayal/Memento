@@ -5,7 +5,7 @@ extends StaticBody3D
 @export var joy_model: Node3D      # We will plug the second model in here!
 
 var intro_dialogue = [
-	"Child: Grandma, what kind of plant is this? It looks thirsty.\n[Press Space]",
+	"Child: Mom, what kind of plant is this? It looks thirsty.\n[Press Space]",
 	"You: That's a forget-me-not, sweetie. You're right, it needs a drink.\n[Press Space]",
 	"You: Let me go find the little green sprinkler.\n[Find the Sprinkler]"
 ]

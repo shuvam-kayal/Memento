@@ -1,10 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpr3uiyd2xngp"]
+[gd_scene format=3 uid="uid://cpr3uiyd2xngp"]
 
 [ext_resource type="PackedScene" uid="uid://cqu6p2u1h00xp" path="res://Assets/gardengirl/child.glb" id="1_mp82b"]
 
-[node name="child" instance=ExtResource("1_mp82b")]
+[node name="child" unique_id=1829373326 instance=ExtResource("1_mp82b")]
 
-[node name="Skeleton3D" parent="Armature" index="0"]
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(1629728952) index="0" unique_id=1204290820]
 bones/0/position = Vector3(0.16455418, -0.10881281, -83.479546)
 bones/0/rotation = Quaternion(-0.7122462, -0.022091601, -0.04109252, 0.7003776)
 bones/1/rotation = Quaternion(-0.025252244, -0.011662247, 0.023619512, 0.9993341)
@@ -71,5 +71,5 @@ bones/61/rotation = Quaternion(-0.1177728, 0.047421142, 0.024865434, 0.9915959)
 bones/62/rotation = Quaternion(0.57996285, -0.09572208, -0.03153208, 0.80838484)
 bones/63/rotation = Quaternion(0.25700378, 0.018398408, -0.0050203414, 0.96622217)
 
-[node name="AnimationPlayer" parent="." index="2"]
-autoplay = "mixamo_com"
+[node name="AnimationPlayer" parent="." index="2" unique_id=732982220]
+autoplay = &"mixamo_com"
