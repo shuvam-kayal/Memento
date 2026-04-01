@@ -38,8 +38,13 @@ func advance_dialogue():
 
 func finish_memory():
 	print("Waking up from memory...")
-	Global.is_in_memory = false
-	MusicManager.play_track("res://Assets/Music/music1.mp3")
+	
 	Global.medicine_memory_done = true
 	Global.target_spawn_point = "Spawn_AfterMedicine"
+	
+	# --- NEW: UPDATE THE OBJECTIVE TO THE DOOR ---
+	Global.completed_objectives.append("Find your medicines")
+	Global.current_objective_index = 5 # Moves to "Answer the door"
+	
+	# Teleport back to the present
 	get_tree().change_scene_to_file("res://Scenes/Level_01.tscn")

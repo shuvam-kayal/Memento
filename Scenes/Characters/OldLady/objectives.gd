@@ -28,6 +28,12 @@ func _ready():
 func _process(delta):
 	visible = true
 	position = Vector2(20, 20)
+	
+	# NEW: Constantly check if a different script updated the Global index!
+	if current_index != Global.current_objective_index:
+		current_index = Global.current_objective_index
+		completed = Global.completed_objectives
+		_refresh_list()
 
 func _refresh_list():
 	for child in objectives_list.get_children():
